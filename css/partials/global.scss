@@ -1,0 +1,27 @@
+// CSS RESET
+* {
+    box-sizing: border-box;
+}
+html, body, div, span, h1, h2, h3, p, img, ul, li, form, label, main, footer, header, nav, section{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+// GLOBAL VARIABLES
+$highlight-orange: #DB7A4E;
+$body-color: #335576;
+$bg-color: #FEFAF5;
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
