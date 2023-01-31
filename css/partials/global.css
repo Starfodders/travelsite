@@ -2,7 +2,25 @@
   box-sizing: border-box;
 }
 
-html, body, div, span, h1, h2, h3, p, img, ul, li, form, label, main, footer, header, nav, section {
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+img,
+ul,
+li,
+form,
+label,
+main,
+footer,
+header,
+.nav,
+nav,
+section {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,4 +41,43 @@ html {
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.site-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+header, .nav {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 10%;
+  background-color: #ffffff;
+}
+.nav__logo {
+  width: 50%;
+  font-size: 1.2rem;
+  color: #335576;
+}
+.nav__list-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5%;
+}
+.nav__list-container a {
+  color: black;
+  padding: 2% 0;
+}
+.nav__list-container a:active {
+  border-bottom: solid 3px #DB7A4E;
 }/*# sourceMappingURL=global.css.map */

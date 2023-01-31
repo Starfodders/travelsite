@@ -2,26 +2,121 @@
 * {
     box-sizing: border-box;
 }
-html, body, div, span, h1, h2, h3, p, img, ul, li, form, label, main, footer, header, nav, section{
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+img,
+ul,
+li,
+form,
+label,
+main,
+footer,
+header,
+nav,
+section {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
 }
+
 ul {
     list-style: none;
 }
+
 a {
     text-decoration: none;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 // GLOBAL VARIABLES
 $highlight-orange: #DB7A4E;
 $body-color: #335576;
 $bg-color: #FEFAF5;
+$heading: 2.7rem;
+$mid-heading: 2rem;
+$sm-heading: 1.2rem;
+
+//MIXINS
+@mixin sectional {
+    width: 100%;
+    padding: 5% 10%;
+}
+
+@mixin card($src) {
+    background-image: url($src);
+    width: 30%;
+    height: 550px;
+    margin: 0 2%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 2%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+}
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.site-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+// NAVBAR /////////
+header {
+    width: 100%;
+}
+
+.nav {
+    @extend header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 10%;
+    background-color: #ffffff;
+
+    &__logo {
+        width: 50%;
+        font-size: $sm-heading;
+        color: $body-color;
+    }
+
+    &__list-container {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end  ;
+        gap: 5%;
+
+        & a {
+            color: black;
+            padding: 2% 0;
+    
+            &:active {
+                border-bottom: solid 3px $highlight-orange;
+            }
+        }
+    }
+
+    
 }
