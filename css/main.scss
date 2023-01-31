@@ -63,6 +63,7 @@
             @include card("../assets/images/hawaii.jpg");
             font-size: $mid-heading;
             font-weight: 700;
+            cursor: pointer;
         }
     }
 }
