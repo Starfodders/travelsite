@@ -1,0 +1,85 @@
+@use "./partials/global" as *;
+
+@mixin source($hawaii: false, $iceland: false, $greece: false) {
+    @if($hawaii) {
+        background-image: url("../assets/Images/hawaii.jpg");
+    }
+    @if($iceland) {
+        background-image: url("../assets/Images/iceland.jpg");
+    }
+    @if($greece) {
+        background-image: url("../assets/Images/greece.jpg");
+    }
+}
+@mixin destination-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: (53%);
+    width: 100%;
+    height: 82vh;
+    padding: 3% 9.5% 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin destination-card {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    background-color: white;
+    width: 25%;
+    padding: 2%;
+    border-radius: 7px;
+    font-size: 1.4rem;
+    margin: 0 -5%;
+}  
+.hawaii {
+    @include source($hawaii: true)
+}
+.iceland{
+    @include source($iceland:true)
+}
+.greece {
+    @include source($greece:true)
+}
+
+//Encompassing Container//
+
+.destination-container {
+    @include destination-bg;
+
+    &--location {
+        font-size: $dest-heading;
+        color: white;
+        margin-bottom: 4%;
+    }
+}
+
+//specific cards//
+.destination__itinerary{
+
+    &--container {
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+    &--card {
+        @include destination-card;
+
+        &--header {
+            font-weight: bold;
+            border-bottom: solid 2px black;
+            margin-bottom: 5%;
+        }
+
+        &--item {
+            background-color: $bg-color;
+            width: 100%;
+            padding: 6%;
+            margin: 8% 0;
+        }
+
+    }
+}
+

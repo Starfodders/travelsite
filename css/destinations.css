@@ -1,1 +1,194 @@
-/*# sourceMappingURL=destinations.css.map */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+img,
+ul,
+li,
+form,
+label,
+main,
+footer,
+header,
+.nav,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header, .nav {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 10%;
+  background-color: #ffffff;
+}
+.nav__logo {
+  width: 50%;
+  font-size: 1.2rem;
+  color: #335576;
+}
+.nav__list-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5%;
+}
+.nav__list-container a {
+  color: black;
+  padding: 2% 0;
+}
+.nav__list-container a:active {
+  border-bottom: solid 3px #DB7A4E;
+}
+
+.footer {
+  background-color: #FEFAF5;
+  color: #335576;
+  display: flex;
+  width: 100%;
+  height: 400px;
+  padding: 5% 13% 10%;
+  justify-content: space-evenly;
+}
+.footer__section {
+  width: 25%;
+}
+.footer__section--title {
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+.footer__section--small {
+  color: #DB7A4E;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 3%;
+}
+.footer__section--detail {
+  font-size: 1.2rem;
+}
+.footer__section__hours {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__section__hours p {
+  width: 33%;
+}
+.footer__section--socials {
+  width: 100%;
+  flex-wrap: nowrap;
+}
+.footer__section--socials img {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 10%;
+}
+
+.footer__section:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__section:nth-child(2) {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__section:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hawaii {
+  background-image: url("../assets/Images/hawaii.jpg");
+}
+
+.iceland {
+  background-image: url("../assets/Images/iceland.jpg");
+}
+
+.greece {
+  background-image: url("../assets/Images/greece.jpg");
+}
+
+.destination-container {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 53%;
+  width: 100%;
+  height: 82vh;
+  padding: 3% 9.5% 5%;
+  display: flex;
+  flex-direction: column;
+}
+.destination-container--location {
+  font-size: 6rem;
+  color: white;
+  margin-bottom: 4%;
+}
+
+.destination__itinerary--container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.destination__itinerary--card {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  background-color: white;
+  width: 25%;
+  padding: 2%;
+  border-radius: 7px;
+  font-size: 1.4rem;
+  margin: 0 -5%;
+}
+.destination__itinerary--card--header {
+  font-weight: bold;
+  border-bottom: solid 2px black;
+  margin-bottom: 5%;
+}
+.destination__itinerary--card--item {
+  background-color: #FEFAF5;
+  width: 100%;
+  padding: 6%;
+  margin: 8% 0;
+}/*# sourceMappingURL=destinations.css.map */
