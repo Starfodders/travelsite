@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5% 10%;
+    padding: 10% 7%;
 
     &__left {
         width: 50%;
@@ -22,7 +22,6 @@
 
         &--paragraph {
             color: $body-color;
-            font-size: $sm-heading;
             margin-bottom: 5%;
         }
 
@@ -31,9 +30,8 @@
             background-color: $highlight-orange;
             border: none;
             width: 30%;
-            padding: 1.5% 4%;
+            padding: 2% 4%;
             border-radius: 20px;
-            font-size: $sm-heading;
         }
     }
 
@@ -53,23 +51,45 @@
     &--title {
         color: $body-color;
         font-size: $mid-heading;
+        margin-bottom: 2%;
     }
 
     &__card-container {
         display: flex;
-        padding: 2% 5%;
+        padding: 2%;
 
         &-card {
             @include card("../assets/images/hawaii.jpg");
             font-size: $mid-heading;
             font-weight: 700;
             cursor: pointer;
+
+            &:hover {
+                animation: card-choice 2s forwards ease-out;
+            }
         }
+        
+
     }
 }
+
 .recommendations__card-container-card:nth-child(2) {
-    @include card("../assets/images/iceland.jpg")
+    @include card("../assets/images/iceland.jpg");
 }
 .recommendations__card-container-card:nth-child(3) {
-    @include card("../assets/images/greece.jpg")
+    @include card("../assets/images/greece.jpg");
+}
+@keyframes card-choice {
+    0% {
+        background-size: 100%;
+        border: solid 1px rgba(0, 0, 0, 0.2);
+    }
+    25% {
+        border: solid 3px $highlight-orange;
+    }
+    100% {
+        background-size: 150%;
+        border: solid 3px $highlight-orange;
+
+    }
 }
