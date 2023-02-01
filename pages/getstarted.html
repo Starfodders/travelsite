@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose a Destination</title>
+    <link rel="stylesheet" href="../css/partials/global.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <header>
+            <nav class="nav">
+                <a href="./index.html" class="nav__logo">
+                    <h1>Travel Site</h1>
+                </a>
+                <ul class="nav__list-container">
+                    <a href="../index.html" class="nav__list--item active">
+                        <li>Home</li>
+                    </a>
+                    <a href="./hawaii.html" class="nav__list--item">
+                        <li>Hawaii</li>
+                    </a>
+                    <a href="./iceland.html" class="nav__list--item">
+                        <li>Iceland</li>
+                    </a>
+                    <a href="./greece.html" class="nav__list--item">
+                        <li>Greece</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <div class="main__container__left">
+                    <h1 class="main__container--title">Paradise Is Just A Few Clicks Away</h1>
+                    <div class="main__container--input-box">
+                        <label for="name" class="main--input-label">Name</label>
+                        <input type="text" placeholder="Brainstation" name="name" class="main--input-field" />
+                        <label for="number" class="main--input-label">Number</label>
+                        <input type="text" placeholder="1 800-903-5159" name="number" class="main--input-field" />
+                        <label for="email" class="main--input-label">Email</label>
+                        <input type="email" placeholder="brainstation.io" name="email" class="main--input-field" />
+                        <label for ="choice" class = "main--input-label">Choose your destination</label>
+                        <select name = "choice" class = "main--input-field">
+                            <option value ="hawaii">Hawaii</option>
+                            <option value ="iceland">Iceland</option>
+                            <option value ="greece">Greece</option>
+                        </select>
+                        <button class = "submit--button">Submit</button>
+                    </div>
+                </div>
+                <div class="main__container__right">
+                    <div class="main__container--image">
+                        <img src="../assets/Images/stamps.png" class = "postage"/>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__top">
+                <h3 class="footer__top--title">Contact</h3>
+                <h3 class="footer__top--title">Hours</h3>
+                <h3 class="footer__top--title">Social</h3>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom--container">
+                    <p class="footer__bottom--title">Email</p>
+                    <p class="footer__bottom--detail">info@travelsite.com</p>
+                </div>
+                <div class="footer__bottom--container">
+                    <div class="footer__bottom--container--hours">
+                        <p class="footer__bottom--title">Monday - Friday</p>
+                        <p class="footer__bottom--detail">9:00 AM - 5:00 PM</p>
+                    </div>
+                    <div class="footer__bottom--container--hours">
+                        <p class="footer__bottom--title">Saturday</p>
+                        <p class="footer__bottom--detail">10:00 AM - 4:00 PM</p>
+                    </div>
+                    <div class="footer__bottom--container--hours">
+                        <p class="footer__bottom--title">Sunday</p>
+                        <p class="footer__bottom--detail">Closed</p>
+                    </div>
+                </div>
+                <div class="footer__bottom--container">
+                    <div class="footer__bottom--container__socials">
+                        <img src="../assets/Icons/icon-instagram.png" alt="instagram link" />
+                        <img src="../assets/Icons/icon-facebook.png" alt="facebook link" />
+                        <img src="../assets/Icons/icon-twitter.png" alt="twitter link" />
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
