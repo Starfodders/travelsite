@@ -170,5 +170,9 @@
         margin-top: 5%;
         align-self: center;
         font-size: $sm-heading;
+        transition: 0.5s;
 }
 
+.submit--button:hover {
+    background: linear-gradient(90deg, #3f51b5, transparent) #2196f3
+}

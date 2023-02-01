@@ -363,4 +363,9 @@ header, .nav {
   margin-top: 5%;
   align-self: center;
   font-size: 1.1rem;
+  transition: 0.5s;
+}
+
+.submit--button:hover {
+  background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
 }/*# sourceMappingURL=main.css.map */
